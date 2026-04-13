@@ -72,6 +72,8 @@ select {
   font-size: 1rem;
   box-sizing: border-box;
   height: 45px;
+  margin: 10px 0;
+  border-radius: 10px;
 }
 
 select {
@@ -102,6 +104,7 @@ button {
   gap: 0.5rem;
   font-size: 1rem;
   height: 45px;
+  margin-top: 10px;
 }
 
 button:hover {
