@@ -1,5 +1,8 @@
 # Queue Management System
 
+## 🌐 Live Demo
+👉 [View Live App](https://queue-management-system-iota.vercel.app/)
+
 ## 📌 Project Description
 
 This is a simple **Queue Management System** built with React. It allows users to add customers to a queue, track their status, and manage the flow from waiting to serving and completion.
@@ -37,7 +40,7 @@ The application simulates how queues are handled in real-world environments such
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/your-username/queue-management-system.git
+git clone https://github.com/EmmanuelNwodo/queue-management-system.git
 ```
 
 ### 2. Navigate into the project folder
