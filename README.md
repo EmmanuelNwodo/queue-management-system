@@ -70,7 +70,7 @@ http://localhost:5173
 
 ## 📷 Screenshot
 
-*(Add a screenshot of your app here)*
+![App Screenshot](./screenshot(2).png)
 
 ---
 
