@@ -1,15 +1,22 @@
 import "./App.css";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import QueueForm from "./components/QueueForm";
 import QueueDisplay from "./components/QueueDisplay";
 
 export default function App() {
 
-  const [queue, setQueue] = useState([]);
+  const [queue, setQueue] = useState(() => {
+  const savedQueue = localStorage.getItem("queue");
+  return savedQueue ? JSON.parse(savedQueue) : [];
+});
+
+useEffect(() => {
+  localStorage.setItem("queue", JSON.stringify(queue));
+}, [queue]);
 
   const addToQueue = (customer) => {
     // Add new customer to the queue
-    setQueue((prevQueue) => [...prevQueue, { ...customer, id: Date.now(), status: "waiting" }]);
+    setQueue((prevQueue) => [...prevQueue, { ...customer, id: Date.now(), queueNumber: prevQueue.length + 1, status: "waiting" }]);
   }
 
 
