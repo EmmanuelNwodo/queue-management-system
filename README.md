@@ -1,16 +1,88 @@
-# React + Vite
+# Queue Management System
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## 📌 Project Description
 
-Currently, two official plugins are available:
+This is a simple **Queue Management System** built with React. It allows users to add customers to a queue, track their status, and manage the flow from waiting to serving and completion.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+The application simulates how queues are handled in real-world environments such as banks, hospitals, and service centers.
 
-## React Compiler
+---
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 🚀 Tech Stack
 
-## Expanding the ESLint configuration
+* **React (Vite)**
+* **JavaScript (ES6+)**
+* **CSS (Custom styling with variables)**
+* **React Icons**
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## ✨ Features
+
+* Add customers to a queue
+* Display all queued customers
+* Update customer status:
+
+  * Waiting
+  * Serving
+  * Completed
+* Remove completed customers from the queue
+* Responsive UI design
+* Clean and simple user interface
+
+---
+
+## 🛠️ How to Run the Project
+
+### 1. Clone the repository
+
+```bash
+git clone https://github.com/your-username/queue-management-system.git
+```
+
+### 2. Navigate into the project folder
+
+```bash
+cd queue-management-system
+```
+
+### 3. Install dependencies
+
+```bash
+npm install
+```
+
+### 4. Start the development server
+
+```bash
+npm run dev
+```
+
+### 5. Open in browser
+
+Visit:
+
+```
+http://localhost:5173
+```
+
+---
+
+## 📷 Screenshot
+
+*(Add a screenshot of your app here)*
+
+---
+
+## 💡 Future Improvements
+
+* Persist data using localStorage or a backend
+* Add queue numbering system
+* Implement authentication (admin/staff login)
+* Connect to a real database (Firebase or Node.js backend)
+
+---
+
+## 📄 License
+
+This project is open-source and available under the MIT License.
