@@ -12,11 +12,13 @@ export default function QueueForm({ onAddCustomer }) {
             if (!name.trim() || !email.trim() || !service.trim()) {
                 alert("Please fill in all fields.");
                 return;
-                onAddCustomer({name, email, service})  
+               
+            }
+
+             onAddCustomer({name, email, service})  
                 setName("")
                 setEmail("")
                 setService("")
-            }
     
         };
 
@@ -45,7 +47,7 @@ export default function QueueForm({ onAddCustomer }) {
                     <option value="payment">Payment</option>
                     <option value="support">Support</option>
                 </select>
-                <button type="submit">
+                <button type="submit" >
                     <FaUserPlus /> 
                     Add Customer to Queue
                 </button>

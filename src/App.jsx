@@ -1,10 +1,12 @@
 import "./App.css";
 import { useState } from "react";
 import QueueForm from "./components/QueueForm";
+import QueueDisplay from "./components/QueueDisplay";
 
 export default function App() {
 
   const [queue, setQueue] = useState([]);
+
   const addToQueue = (customer) => {
     // Add new customer to the queue
     setQueue((prevQueue) => [...prevQueue, { ...customer, id: Date.now(), status: "waiting" }]);
@@ -35,7 +37,9 @@ export default function App() {
       </header>
       <main>
         <QueueForm onAddCustomer={addToQueue} />
-        {/* <QueueDisplay queue={queue} /> */}
+        <QueueDisplay queue={queue} 
+        onUpdateStatus={updateStatus}
+        onRemoveFromQueue={removeFromQueue} /> 
       </main>
     </div>
   );
