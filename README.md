@@ -76,7 +76,7 @@ http://localhost:5173
 
 ## 💡 Future Improvements
 
-* Persist data using localStorage or a backend
+
 * Add queue numbering system
 * Implement authentication (admin/staff login)
 * Connect to a real database (Firebase or Node.js backend)
