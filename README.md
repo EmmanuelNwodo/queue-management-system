@@ -70,7 +70,7 @@ http://localhost:5173
 
 ## 📷 Screenshot
 
-![App Screenshot](./Screenshot (2).png)
+![App Screenshot](./screenshot.png)
 
 ---
 
