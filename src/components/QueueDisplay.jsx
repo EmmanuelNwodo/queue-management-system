@@ -27,6 +27,26 @@ export default function QueueDisplay({ queue,onUpdateStatus,onRemoveFromQueue })
               <p>{customer.email}</p> 
               <p>{customer.service}</p> 
              <span className="status" style={{ color: getStatusColor(customer.status) }}>{customer.status}</span>
+
+              <div className="actions">
+                {customer.status === "waiting" && (
+                    <button  className="serve-btn" onClick={() => onUpdateStatus(customer.id, "serving")}>
+                  Serve
+                </button>
+                )}
+                {customer.status === "serving" && (
+                    <button  className="complete-btn" onClick={() => onUpdateStatus(customer.id, "completed")}>
+                  Completed
+                </button>
+                )}
+                {customer.status === "completed" && (
+                    <button  className="remove-btn" onClick={() => onRemoveFromQueue(customer.id)}>
+                  Remove
+                </button>
+                )}
+                
+                
+              </div>
             </li>
             ))}
         </ul>
